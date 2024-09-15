@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="5">
+	<Appenders>
+		<Http name="ParserHttp" url="http://localhost:9000/api/log4j" verifyHostName="false">
+			<Property name="X-Java-Runtime" value="$${java:runtime}" />
+			<JsonLayout properties="true" />
+<!--			<JsonTemplateLayout eventTemplateUri="classpath:MyLayout.json"/>-->
+		</Http>
+	</Appenders>
+	<Loggers>
+		<Logger name="example_logger" level="TRACE" additivity="false">
+			<AppenderRef ref="ParserHttp" />
+		</Logger>
+	</Loggers>
+</Configuration>
