@@ -14,5 +14,5 @@ libraryDependencies += guice
 
 libraryDependencies ++= Seq(
   "com.fasterxml.jackson.core" % "jackson-databind" % "2.14.3",
-  "org.apache.logging.log4j" % "log4j-core" % "2.21.1",
+  "org.apache.logging.log4j" % "log4j-core" % "2.23.1",
 )
