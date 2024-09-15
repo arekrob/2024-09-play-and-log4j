@@ -1,4 +1,4 @@
-# Demonstration of an error that appears when using Play 3.0.5 and log4j 2.21.1
+# Demonstration of an error that appears when using Play 3.0.5 and log4j 2.23.1
 
 When you run this project using `sbt run`, the following error appears:
 ```
